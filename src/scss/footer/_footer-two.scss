@@ -1,0 +1,165 @@
+.srex-footer-two{
+    background-color: $text-primary;
+    padding-top: 50px;
+    background-image: url(../images/footer-two-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+        &__top__content {
+            border: 1px solid $border-primary;
+            border-radius: 20px;
+            padding: 40px;
+            @media #{$tab_device} {
+                padding: 20px;
+            }
+            &__contact {
+                align-items: center;
+                @media #{$small_mobile} {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                li {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    @media #{$small_mobile} {
+                        padding: 25px 0;
+                    }
+                    @media #{$tab_device} {
+                        gap: 10px;
+                    }
+                } 
+            }
+            h3 {
+                color: $white-color;
+                @media #{$tab_device} {
+                    font-size: 15px;
+                }
+            }
+            i {
+                font-size: 40px;
+                color: $primary-color;
+                @media #{$tab_device} {
+                    font-size: 25px;
+                }
+            }
+            p {
+                color: $white-color;
+                a{
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $white-color;
+
+                    @media #{$tab_device} {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &__links {
+            padding-top: 80px;
+            padding-bottom: 40px;
+            
+            &__logo{
+                img{
+                @media #{$small_mobile} {
+                    padding-bottom: 20px;
+                }
+            }
+            &__text{
+                padding: 30px 100px 40px 0;
+                @media #{$small_mobile} {
+                    padding: 0;
+                }
+            }
+        }
+        &__social_links {
+            display: flex;
+            gap: 10px; 
+            @media #{$small_mobile} {
+                padding: 25px 0;
+            }
+            li {
+                background: $text-primary;
+                border: 1px solid $primary-color;
+                color: $white-color;
+                cursor: pointer;
+                height: 35px;
+                width: 35px;
+                border-radius: 999px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: $primary-color;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .border-line{
+        height: 1px;
+        width: 100%;
+        background: $white-color;
+        opacity: 0.2;
+    }
+            
+    .srex-footer__bottom{
+        li{
+        a{
+            &:hover {
+                color: $white-color;
+            } 
+        }
+        }
+    }
+}
+
+.footer-two {
+    .srex-footer__links__wrapper {
+        h4{
+            color: $white-color;
+        }
+        li {
+            a {
+                color: $text-secondary;
+                font-size: 16px;
+                font-weight: 500;
+                &:hover {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .srex-footer__form {
+        position: relative;
+        input {
+            border-radius: 999px;
+            padding: 16px ;
+            padding-right: 80px;
+            margin-right: 10px;
+            background: $text-primary;
+            border: 2px solid $border-primary;
+            width: 100%;
+            color: $white-color;
+            &:focus{
+                outline: none;
+            }
+        }
+        button {
+            width: 60px;
+            height: 60px;
+            background: $primary-color;
+            border-radius: 999px;
+            position: absolute;
+            right: -5px;
+            top: 0;
+            i {
+                font-size: 16px;
+                color: $white-color;
+            }
+        }
+    }
+}
+
+

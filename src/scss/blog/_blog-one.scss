@@ -1,0 +1,90 @@
+.srex-blog-one {
+    margin-top: 120px;
+    @media #{$small_mobile} {
+        margin-top: 80px;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        @media #{$small_mobile} {
+            flex-direction: column;
+            gap: 25px;
+        }
+        @media #{$tab_device} {
+            // flex-direction: column;
+            // align-items: flex-start;
+            gap: 25px;
+        }
+
+        .srex-section__head {
+            @media #{$tab_device} {
+                margin: 0;
+                text-align: left;
+            }
+        }
+    }
+    &__post{
+        margin-top: 60px;
+        transition: all 0.3s ease-in-out;
+        i {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        &:hover {
+            .srex-blog-one__post__img::after {
+                width: 100%;
+            }
+            i {
+                color: $primary-color;
+            }
+            h3 a {
+                color: $primary-color;
+            }
+            .srex-btn--outline {
+                border-color: $primary-color;
+                background-color: $gray-color;
+                color: $primary-color;
+            }
+        }
+        &__img {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: -10px;
+                width: 0;
+                height: 100%;
+                background-color: rgb(29 143 44 / 39%);
+                transition: all 0.4s ease-in-out;
+                border-radius: 10px;
+            }
+            
+        }
+        h6 {
+            color: $text-secondary;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .srex-btn--outline {
+            border-color: $border-gray;
+            &:hover {
+                border-color: $primary-color;
+                background-color: $gray-color;
+                color: $primary-color;
+            }
+        } 
+    }
+
+}

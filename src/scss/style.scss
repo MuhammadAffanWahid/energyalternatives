@@ -1,0 +1,156 @@
+/**
+===========================
+Template: Solarex - Solar & Renewable Energy HTML Template
+File: Default Styles
+Author: ultraDevs
+Author URI: https://themeforest.net/user/ultradevs
+Description: Solarex - Solar & Renewable Energy HTML Template
+Version: 1.0.0
+===========================
+
+Note: This file contains the styles for the full template. You can edit the styles of the template from here.
+
+Default Styles
+
+Table of Contents
+01/ Variables
+02/ Mixins
+03/ Animation
+04/ Fonts
+05/ Common
+06/ Top Header
+07/ Header
+08/ Hero
+09/ Services
+10/ About US
+11/ Features
+12/ Video
+13/ Contact
+14/ Portfolio
+15/ Sponsor
+16/ FAQ
+17/ News Letter
+18/ Stats
+19/ Testimonial
+20/ Blog
+21/ Footer
+22/ Support
+23/ Pricing
+
+====================================
+**/
+
+/*------------------------------------
+	01/ Variables
+------------------------------------*/
+@import "abstracts/variables";
+
+/*------------------------------------
+	02/ Mixins
+------------------------------------*/
+@import "abstracts/mixins";
+
+/*------------------------------------
+	03/ Animation
+------------------------------------*/
+@import "abstracts/animations";
+
+/*------------------------------------
+	04/ Fonts
+------------------------------------*/
+@import "base/fonts";
+
+/*------------------------------------
+	05/ Common
+------------------------------------*/
+@import "base/common";
+
+/*------------------------------------
+	06/ Top Header
+------------------------------------*/
+@import "top-header/top-header";
+
+/*------------------------------------
+	07/ Header
+------------------------------------*/
+@import "header/header";
+
+/*------------------------------------
+	08/ Hero
+------------------------------------*/
+@import "hero/hero";
+
+/*------------------------------------
+	09/ Services
+------------------------------------*/
+@import "services/services";
+
+/*------------------------------------
+	10/ About US
+------------------------------------*/
+@import "about-us/about-us";
+
+/*------------------------------------
+	11/ Features
+------------------------------------*/
+@import "features/features";
+
+/*------------------------------------
+	12/ Features
+------------------------------------*/
+@import "video/video";
+
+/*------------------------------------
+	13/ Contact
+------------------------------------*/
+@import "contact/contact";
+
+/*------------------------------------
+	14/ Portfolio
+------------------------------------*/
+@import "portfolio/portfolio";
+
+/*------------------------------------
+	15/ Sponsor
+------------------------------------*/
+@import "sponsor/sponsor";
+
+/*------------------------------------
+	16/ FAQ
+------------------------------------*/
+@import "faq/faq";
+
+/*------------------------------------
+	17/ News Letter
+------------------------------------*/
+@import "news-letter/news-letter";
+
+/*------------------------------------
+	18/ Stats
+------------------------------------*/
+@import "stats/stats";
+
+/*------------------------------------
+	19/ Testimonial
+------------------------------------*/
+@import "testimonial/testimonial";
+
+/*------------------------------------
+	20/ Blog
+------------------------------------*/
+@import "blog/blog";
+/*------------------------------------
+	21/ Footer
+------------------------------------*/
+@import "footer/footer";
+
+/*------------------------------------
+	22/ Support - 2
+------------------------------------*/
+@import "support/support";
+
+
+/*------------------------------------
+	23/ Pricing
+------------------------------------*/
+@import "pricing/pricing";

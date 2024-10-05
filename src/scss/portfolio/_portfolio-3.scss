@@ -1,0 +1,15 @@
+.srex-portfolio-three {
+    margin-top: -300px;
+    &__slider {
+        &__item {
+            padding: 20px 10px;
+
+            img {
+                border-radius: 20px;
+            }
+        }
+        .slick-list .slick-track {
+            padding-left: 12.5%;
+        }
+    }
+}

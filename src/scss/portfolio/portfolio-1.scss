@@ -1,0 +1,115 @@
+.srex-portfolio {
+	&__title {
+		width: 800px;
+		margin: 0 auto;
+		text-align: center;
+		@media #{$small_mobile} {
+			width: 100%;
+		}
+		@media #{$tab_device} {
+			width: 100%;
+		}
+	}
+
+	.filter-item {
+		display: none;
+	}
+
+	.controls {
+        ul {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 30px; 
+            justify-content: center;
+			padding: 30px 0;
+			margin-bottom: 30px;
+            @media #{$small_mobile} {
+                gap: 10px;
+                justify-content: flex-start;
+                overflow-x: scroll;
+            }
+			@media #{$tab_device} {
+                gap: 10px;
+                // justify-content: center;
+            }
+            li {
+                color: $text-primary;
+                font-style: normal;
+                background: $gray-color;
+                border-radius: 999px;
+                font-weight: 700;
+                padding: 15px 60px;
+                cursor: pointer;
+                transition: 0.2s;
+                -webkit-tap-highlight-color: transparent;
+				text-align: center;
+                @media #{$small_mobile} {
+                    padding: 10px 15px;
+                    min-width: 150px;
+                }
+
+				@media #{$tab_device} {
+					padding: 10px 15px;
+					min-width: 100px;
+				}
+
+				@media #{$lg_device} {
+					padding: 10px 15px;
+					min-width: 100px;
+				}
+
+                &:hover,
+                &.mixitup-control-active,
+                &.active {
+                    color: $white-color;
+                    background:  $primary-color;
+                }
+            }
+        }
+    }
+
+	&__item {
+		position: relative;
+		overflow: hidden;
+		border-radius: 20px;
+		@media #{$small_mobile} {
+			margin: 10px 0;
+		}
+		@media #{$tab_device} {
+			margin-bottom: 20px;
+		}
+		img {
+			width: 100%;
+			transition: all 0.3s ease-in-out;
+		}
+		&:hover {
+			.srex-portfolio__item__title {
+				background-color: $primary-color;
+				color: $white-color;
+				border-right-color: $secondary-color;
+				h3, h2 {
+					color: $white-color;
+				}
+			}
+			img {
+				transform: scale(1.1);
+			}
+		}
+		&__title {
+			position: absolute;
+			background: $white-color;
+			display: flex;
+			justify-content: center;
+			width: 280px;
+			height: 95px;
+			padding: 20px;
+			border-radius: 0px 10px 10px 0px;
+			border-right: 5px solid $primary-color;
+			bottom: 35px;
+			transition: all 0.3s ease-in-out;
+			h3 {
+				margin-left: 10px;
+			}
+		}
+	}
+}

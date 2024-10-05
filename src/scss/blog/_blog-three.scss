@@ -1,0 +1,109 @@
+.srex-blog-three {
+    margin-top: 120px;
+    @media #{$small_mobile} {
+        margin-top: 80px;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        @media #{$small_mobile} {
+            flex-direction: column;
+            gap: 25px;
+        }
+        @media #{$tab_device} {
+            // flex-direction: column;
+            // align-items: flex-start;
+            gap: 25px;
+        }
+
+        .srex-section__head {
+            @media #{$tab_device} {
+                margin: 0;
+                text-align: left;
+            }
+            &__title {
+                max-width: 60%;
+                @media #{$small_mobile} {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    &__post {
+        margin-top: 60px;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid $border-gray;
+        box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        i {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        &:hover {
+            .srex-blog-three__post__img::after {
+                width: 95%;
+            }
+            i {
+                color: $primary-color;
+            }
+            h3 a {
+                color: $primary-color;
+            }
+            .srex-btn--outline {
+                border-color: $primary-color;
+                background-color: $gray-color;
+                color: $primary-color;
+            }
+        }
+        &__img {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            padding: 10px;
+            padding-bottom: 0;
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 10px;
+                bottom: 0px;
+                width: 0;
+                left: 10px;
+                right: 0px;
+                height: 97%;
+                background-color: rgb(29 143 44 / 39%);
+                transition: all 0.4s ease-in-out;
+                border-radius: 10px;
+            }
+            
+        }
+        h6 {
+            color: $text-secondary;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 0 30px;
+        }
+        &__meta {
+            background-color: $gray-color;
+            padding: 10px 30px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .srex-btn--outline {
+            border-color: $border-gray;
+            &:hover {
+                border-color: $primary-color;
+                background-color: $gray-color;
+                color: $primary-color;
+            }
+        } 
+    }
+
+}

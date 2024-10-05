@@ -1,0 +1,58 @@
+.srex-pricing {
+    background-color: $gray-color;
+    padding-top: 230px;
+    margin-top: -100px;
+    padding-bottom: 400px;
+    &-items {
+        margin-top: 60px;
+        &__item {
+            background-color: $white-color;
+            padding: 60px 80px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            h3 {
+                color: $primary-color;
+                margin-bottom: 22px;
+            }
+            h2 {
+                display: flex;
+                align-items: flex-end;
+                line-height: 48px;
+                gap: 10px;
+                p {
+                    text-transform: lowercase;
+                }
+            }
+
+            .srex-icon-list {
+                i {
+                    background-color: $primary-color;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-size: 12px;
+                }
+            }
+
+            .srex-btn {
+                margin-top: 35px;
+                border: 1.5px solid $border-gray;
+                padding: 15px 30px;
+                display: block;
+                width: 100%;
+                &:hover {
+                    background-color: $primary-color;
+                    color: $white-color;
+                    border-color: $primary-color;
+                }
+                i {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

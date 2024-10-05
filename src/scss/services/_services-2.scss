@@ -1,0 +1,44 @@
+.srex-service-two {
+	background: $gray-color;
+	padding-top: 100px;
+    position: relative;
+    &__frame{
+        position: absolute;
+        right: 29%;
+    }
+	@media #{$small_mobile} {
+		padding-top: 70px;
+	}
+	@media #{$tab_device} {
+		padding-top: 80px;
+	}
+	.srex-section__head__title {
+		max-width: 700px;
+		margin: 0 auto 60px auto;
+	}
+    .srex-info-box__item{
+        background: $white-color;
+        &:hover {
+            border: 1px solid $primary-color;
+        }
+        &__desc{
+            margin-bottom: 40px;
+        }
+    }
+    .srex-stats{
+        margin-top: 150px;
+        @media #{$small_mobile} {
+            margin-top: 60px;
+        }
+        @media #{$tab_device} {
+            margin-top: 80px;
+        }
+        &__item{
+            &__text{
+                h2{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

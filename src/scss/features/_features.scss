@@ -1,0 +1,35 @@
+.srex-features {
+	background: url('../images/features-bg.png') no-repeat;
+	padding: 50px 0 430px 0;
+	background-size: cover;
+	@media #{$small_mobile} {
+		padding: 50px 0 100px 0;
+	}
+	@media #{$tab_device} {
+		padding: 50px 0 150px 0;
+	}
+	@media #{$lg_device} {
+		padding: 50px 0 250px 0;
+	}
+	&__left {
+		max-width: 520px;
+		@media #{$small_mobile} {
+			max-width: 100%;
+			margin-bottom: 50px;
+			text-align: center;
+		}
+		@media #{$tab_device} {
+			max-width: 100%;
+			margin-bottom: 50px;
+			text-align: center;
+		}
+		h2 {
+            margin-bottom: 25px;
+			
+        }
+        .srex-icon-list {
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+	}
+}

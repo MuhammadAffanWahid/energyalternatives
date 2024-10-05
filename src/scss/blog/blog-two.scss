@@ -1,0 +1,71 @@
+.srex-blog-two{
+    position: relative;
+    &__frame{
+        position: absolute;
+        left: 30%;
+        top: 5%;
+
+        @media #{$small_mobile} {
+            left: 10px;
+            top: 180px;
+        }
+    }
+    @media #{$small_mobile} {
+        padding: 70px 0 70px 0;
+        margin-top: 0;
+    }
+    &__post{
+        position: relative;
+        background: $gray-color;
+        padding: 20px;
+        border-radius: 20px;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background: $white-color;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 100;
+            // -webkit-transform: translate(0, -10px);
+            // transform: translate(0, -10px);
+            .srex-info-box__more {
+                i {
+                    margin-left: 10px;
+                }
+            }
+            i {
+                color: $secondary-color;
+            }
+            .srex-blog-two__post__badge {
+                background: $secondary-color;
+            }
+
+            h3 a {
+                color: $secondary-color;
+            }
+        }
+        .srex-blog-one__post__img {
+            &::after {
+                background: rgb(255 112 41 / 39%);
+            }
+        }
+        &__badge{
+            position: absolute;
+            top: 45%;
+            left: 10%;
+            background: $primary-color;
+            width: 70px;
+            height: 30px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            h6{
+                color: $white-color;
+                text-transform: uppercase;
+            }
+
+        }
+
+        h3 {
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+/*------------------------------------
+	Hero Two
+------------------------------------*/
+.srex-hero-two{
+    width: 100%;
+    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../images/home-two/hero/hero-bg-image.png) no-repeat center center / cover;
+    &__box{
+        padding: 100px 0px 20px 0;
+        @media #{$small_mobile} {
+            padding: 80px 0px;
+        }
+        @media #{$tab_device} {
+            padding: 90px 0px 70px 0;
+        }
+        @media #{$lg_device} {
+            // padding: 150px 10px;
+        }
+        h1 {
+            color: $white-color;
+            font-size: 150px;
+            font-weight: 700;
+            line-height: 115%;
+            @media #{$small_mobile} {
+                font-size: 50px;
+                margin-bottom: 15px;
+            }
+            @media #{$tab_device} {
+                font-size: 80px;
+            }
+            @media #{$lg_device} {
+                font-size: 90px;
+            }
+            span{
+                -webkit-text-stroke: 1px $white-color;
+                color: transparent;
+            }
+        }
+        h2 {
+            color: $white-color;
+            font-size: 110px;
+            font-weight: 700;
+            line-height: 115%; 
+            text-align: center;
+            position: relative; 
+            @media #{$small_mobile} {
+                font-size: 40px;
+                margin-bottom: 15px;
+                text-align: right;
+            }
+            @media #{$tab_device} {
+                font-size: 50px;
+            }
+            @media #{$lg_device} {
+                font-size: 60px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%; 
+                left: 0;
+                width: 20%; 
+                height: 3px;
+                background-color:  $border-gray;
+                @media #{$small_mobile} {
+                    width: 100px; 
+                }
+            }
+        }
+        p {
+            max-width: 40%;
+            color: $white-color;
+            padding-bottom: 30px;
+            @media #{$small_mobile} {
+                max-width: 100%;
+            }
+            @media #{$tab_device} {
+                max-width: 60%;
+            }
+            @media #{$lg_device} {
+                max-width: 70%;
+            }
+        }
+        .srex-btn--outline {
+            border-color: #FF7029;
+            color: $white-color;
+            @media #{$small_mobile} {
+                padding: 10px 15px;
+            }
+            &:hover {
+                border-color: #FF7029;
+                background-color: #FF7029;
+                color: $white-color;
+            }
+        } 
+        .srex-btn--primary{
+            background-color: #FF7029;
+            border-color: #FF7029;
+            color: $white-color;
+            @media #{$small_mobile} {
+                padding: 10px 15px;
+            }
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #FF7029;
+                color: $white-color;
+            }
+        } 
+    }
+}

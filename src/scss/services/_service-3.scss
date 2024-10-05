@@ -1,0 +1,31 @@
+.srex-service-three {
+    
+    // @include cover-background;
+    // padding: 100px;
+    @media #{$small_mobile} {
+        padding-top: 70px;
+    }
+    @media #{$tab_device} {
+        padding-top: 80px;
+    }
+    &__left{
+        padding-right: 30px;
+        background-image: url(../images/home-two/service-two/service-3-bg.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        height: 100%;
+        p {
+            margin-top: 15px;
+            margin-bottom: 25px !important;
+        }
+        @media #{$small_mobile} {
+            padding-right: 0;
+            margin-bottom: 80px;
+        }
+
+        @media #{$tab_device} {
+            padding-right: 0;
+            margin-bottom: 80px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.srex-service {
+	background: $white-color;
+	padding-top: 100px;
+	@media #{$small_mobile} {
+		padding-top: 50px;
+	}
+	@media #{$tab_device} {
+		padding-top: 50px;
+	}
+	.srex-section__head__title {
+		max-width: 700px;
+		margin: 0 auto 60px auto;
+	}
+}

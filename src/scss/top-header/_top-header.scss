@@ -1,0 +1,28 @@
+.srex-top-header{
+    background: #cdf8d3;
+    padding: 15px 0 15px 0;
+    @media #{$small_mobile} {
+        padding: 15px 10px;
+    }
+    // display: flex;
+    // justify-content: space-between; 
+    // align-items: center;
+    p{
+        color: #24231D;
+        @media #{$small_mobile} {
+            font-size: 10px;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            a{
+                padding: 0 12px;
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

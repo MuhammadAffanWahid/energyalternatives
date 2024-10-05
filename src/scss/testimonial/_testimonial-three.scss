@@ -1,0 +1,192 @@
+.srex-testimonial-three {
+    padding-top: 120px;
+    @media #{$small_mobile} {
+        padding-top: 70px;
+    }
+    @media #{$tab_device} {
+        padding-top: 80px;
+    }
+    
+    &__slider {
+        margin-top: 60px;
+        @media #{$small_mobile} {
+            margin-top: 20px;
+        }
+        @media #{$tab_device} {
+            margin-top: 20px;
+        }
+        &__item {
+            color: $white-color;
+            background-image: url(../images/home-three/testimonial-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 20px;
+            background-color: $white-color;
+            text-align: center;
+            flex-direction: column;
+            display: flex !important;
+            @include flex-center;
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.05);
+            border: 1px solid $gray-color;
+            margin: 40px 0;
+            padding: 0 50px;
+            &__ratings {
+                margin-bottom: 20px;
+                i {
+                    color: #FFBA08;
+                    font-size: 16px;
+                    line-height: normal;
+                }
+            }
+            &__icon {
+                width: 60px;
+                height: 60px;
+                background-color: $primary-color;
+                border-radius: 100%;
+                @include flex-center;
+                margin-top: -30px;
+                margin-bottom: 30px;
+                i {
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                }
+            }
+            &__text {
+                font-size: 25px;
+                line-height: 40px;
+                color: $text-secondary;
+                font-weight: 500;
+                margin-top: 40px;
+                margin-bottom: 30px;
+                @media #{$small_mobile} {
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__author {
+                h3 {
+                    margin-bottom: 5px;
+                    color: $text-primary;
+                }
+                p {
+                    color: $text-secondary;
+                }
+            }
+        }
+        .slick-arrow {
+            display: none !important;
+            
+        }
+        &__nav {
+            
+            transition: all 0.3s;
+            svg {
+                font-size: 30px;
+                color: $primary-color;
+                transition: all 0.3s;
+            }
+
+            &__prev,
+            &__next {
+                position: absolute;
+                top: 50%;
+            }
+
+            &__prev {
+                left: -100px;
+                @media #{$small_mobile} {
+                    left: -30px;
+                }
+                @media #{$tab_device} {
+                    left: -30px;
+                }
+            }
+
+            &__next {
+                right: -100px;
+                @media #{$small_mobile} {
+                    right: -30px;
+                }
+                @media #{$tab_device} {
+                    right: -30px;
+                }
+            }
+
+            > div {
+                transition: all 0.3s;
+                user-select: none;
+                width: 80px;
+                height: 80px;
+                background-color: rgba( $primary-color, 0.2 );
+                @include flex-center;
+                border-radius: 100%;
+                &:hover {
+                    background-color: $primary-color;
+                    cursor: pointer;
+                    svg {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+        
+    }
+
+
+    &__right {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+
+        @media #{$small_mobile} {
+            margin-top: 50px;
+        }
+        
+        @media #{$tab_device} {
+            // text-align: center;
+            justify-content: center;
+        }
+        &__img {
+            position: absolute;
+            right: 67px;
+            bottom: 2px;
+            border-bottom-left-radius: 125px;
+            border-bottom-right-radius: 97px;
+            @media #{$small_mobile} {
+                left: 50px;
+                height: 400px;
+            }
+            @media #{$tab_device} {
+                left: 170px;
+                height: 500px;
+            }
+        }
+
+        &__badge {
+            position: absolute;
+            bottom: 0;
+            left: 155px;
+            background-color: $secondary-color;
+            color: $white-color;
+            border-radius: 20px;
+            padding: 20px 75px 20px 30px;
+            @media #{$small_mobile} {
+                left: 0px;
+                padding: 20px 40px;
+            }
+            img {
+                margin-bottom: 15px;
+                height: 50px;
+                width: 50px;
+            }
+            h3 {
+                color: $white-color;
+            }
+        }
+    }
+}

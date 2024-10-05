@@ -1,0 +1,67 @@
+.ud-header__mobile-nav-bar {
+	#hambuger {
+		i {
+			font-size: 30px;
+			color: $primary-color;
+			transition: all 0.3s ease;
+		}
+	}
+	.ud-mobile-nav-wrap {
+		&__menu {
+			position: fixed;
+			right: -300px;
+			top: 0;
+			width: 300px;
+			height: 100%;
+			background: $primary-color;
+			z-index: 9999;
+			transition: all 0.3s ease;
+			overflow-y: auto;
+			padding: 20px 15px;
+			&--open {
+				right: 0;
+			}
+			&__close {
+				background: transparent;
+				padding: 0 5px;
+				i {
+					color: #fff;
+					font-size: 30px;
+				}
+			}
+			ul {
+				li {
+					a {
+						color: #fff;
+						font-size: 16px;
+						font-weight: 600;
+						display: block;
+						padding: 10px 15px;
+						border-bottom: 1px solid $primary-color;
+						line-height: 26px;
+						i {
+							font-size: 12px;
+							margin-left: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	&__overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		z-index: 9998;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease;
+		&--open {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}

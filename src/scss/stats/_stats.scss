@@ -1,0 +1,55 @@
+.srex-stats {
+    &__items {}
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        @media #{$small_mobile} {
+            justify-content: flex-start;
+            margin-bottom: 30px;
+        }
+        @media #{$tab_device} {
+            justify-content: flex-start;
+            margin-bottom: 30px;
+        }
+        @media #{$lg_device} {
+            justify-content: flex-start;
+            margin-bottom: 30px;
+        }
+        &__icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 999px;
+            border: 1px solid $border-gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media #{$lg_device} {
+                width: 60px;
+                height: 60px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                @media #{$lg_device} {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        &__text {
+            h2 {
+                @media #{$lg_device} {
+                    font-size: 30px;
+                }
+            }
+            h3 {
+                @media #{$lg_device} {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

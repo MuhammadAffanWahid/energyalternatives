@@ -1,0 +1,38 @@
+.srex-question {
+	background: url(../images/home-one/faq/faq-bg.png) no-repeat;
+	padding: 120px 0;
+	@media #{$small_mobile} {
+		padding: 170px 0;
+		background-size: cover;
+	}
+	@media #{$tab_device} {
+		padding: 80px 0;
+		background-size: cover;
+	}
+	&__title {
+		width: 700px;
+		margin: 0 auto;
+		text-align: center;
+		h2 {
+			color: $white-color;
+		}
+        @media #{$small_mobile} {
+			width: 100%;
+		}
+	}
+
+    &__left{
+        img{
+            border-radius: 20px;
+			width: 100%;
+			@media #{$small_mobile} {
+				margin-bottom: 40px;
+			}
+			@media #{$tab_device} {
+				margin-bottom: 40px;
+			}
+        }
+    }
+    &__right{
+    }
+}

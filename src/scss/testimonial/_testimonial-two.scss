@@ -1,0 +1,163 @@
+.srex-testimonial-two {
+    background-color: $gray-color;
+    background-image: url(../images/home-two/testimonial-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 270px;
+    border-radius: 40px;
+    @media #{$small_mobile} {
+        padding-top: 70px;
+        padding-bottom: 200px;
+    }
+    @media #{$tab_device} {
+        padding-top: 80px;
+        padding-bottom: 200px;
+    }
+    &__title {
+        width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 100px;
+        @media #{$small_mobile} {
+            width: 100%;
+            padding-bottom: 0;
+        }
+        @media #{$tab_device} {
+            width: 100%;
+            padding-bottom: 0;
+        }
+    }
+
+    &__slider {
+        margin-top: 60px;
+        @media #{$small_mobile} {
+            margin-top: 20px;
+        }
+        @media #{$tab_device} {
+            margin-top: 20px;
+        }
+        &__item {
+            color: $white-color;
+            &__ratings {
+                margin-bottom: 20px;
+                i {
+                    color: #FFBA08;
+                    font-size: 16px;
+                    line-height: normal;
+                }
+            }
+            &__quote {
+                height: 80px;
+                width: 80px;
+                margin-top: -20px;
+                margin-bottom: 20px;
+                @media #{$small_mobile} {
+                    height: 40px;
+                    width: 40px;
+                    margin-bottom: 20px;
+                }
+            }
+            &__text {
+                font-size: 25px;
+                line-height: 40px;
+                color: $text-secondary;
+                font-weight: 500;
+                margin-bottom: 30px;
+                @media #{$small_mobile} {
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__author {
+                h3 {
+                    margin-bottom: 5px;
+                    color: $text-primary;
+                }
+                p {
+                    color: $text-secondary;
+                }
+            }
+        }
+        .slick-arrow {
+            display: none !important;
+        }
+        &__nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            transition: all 0.3s;
+            svg {
+                font-size: 45px;
+                color: $text-secondary;
+                transition: all 0.3s;
+            }
+
+            div {
+                transition: all 0.3s;
+                user-select: none;
+                &:hover {
+                    svg {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        
+    }
+
+
+    &__right {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+
+        @media #{$small_mobile} {
+            margin-top: 50px;
+        }
+        
+        @media #{$tab_device} {
+            // text-align: center;
+            justify-content: center;
+        }
+        &__img {
+            position: absolute;
+            right: 67px;
+            bottom: 2px;
+            border-bottom-left-radius: 125px;
+            border-bottom-right-radius: 97px;
+            @media #{$small_mobile} {
+                left: 50px;
+                height: 400px;
+            }
+            @media #{$tab_device} {
+                left: 170px;
+                height: 500px;
+            }
+        }
+
+        &__badge {
+            position: absolute;
+            bottom: 0;
+            left: 155px;
+            background-color: $secondary-color;
+            color: $white-color;
+            border-radius: 20px;
+            padding: 20px 75px 20px 30px;
+            @media #{$small_mobile} {
+                left: 0px;
+                padding: 20px 40px;
+            }
+            img {
+                margin-bottom: 15px;
+                height: 50px;
+                width: 50px;
+            }
+            h3 {
+                color: $white-color;
+            }
+        }
+    }
+}

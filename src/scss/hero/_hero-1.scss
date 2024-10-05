@@ -1,0 +1,114 @@
+/*------------------------------------
+	Hero One
+------------------------------------*/
+.srex-hero-one {
+    background-color: $gray-color;
+    padding: 50px 0 30px 0;
+    margin-bottom: 40px;
+    @media #{$small_mobile} {
+        padding: 20px 0 0px 0;
+    }
+    @media #{$tab_device} {
+        margin-bottom: 70px;
+        padding: 50px 0 50px 0;
+    }
+    &__box {
+        border-radius: 20px;
+        background-color: $white-color;
+        padding: 40px 40px 30px 40px;
+        margin-bottom: 30px;
+        @media #{$small_mobile} {
+            padding: 30px;
+        }
+        &__text {
+            margin-bottom: 20px;
+            @media #{$small_mobile} {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            &__top {
+                &__line {
+                    height: 2px;
+                    background-color: #E3E3E3;
+                    width: 50%;
+                    @media #{$small_mobile} {
+                        width: 30%;
+                    }
+                }
+            }
+            span {
+                color: $primary-color;
+            }
+        }
+
+        &__desc {
+            margin-bottom: 25px;
+        }
+    }
+
+
+    &__left {
+        &__enery__efficient {
+            background-color: $primary-color;
+            border-radius: 20px;
+            padding: 40px 75px;
+            text-align: center;
+            @media #{$small_mobile} {
+                padding: 20px;
+            }
+            h2 {
+                font-size: 68px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 115%; /* 78.2px */
+                text-transform: capitalize;
+                @media #{$small_mobile} {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+            }
+            h2, p {
+                font-family: Manrope, sans-serif;
+                color: $white-color;
+            }
+        }
+        &__img {
+            flex: 1;
+            img {
+                border-radius: 20px;
+                width: 100%;
+                max-height: 186px;
+                object-fit: cover;
+                @media #{$small_mobile} {
+                    max-height: 100%;
+                    min-height: 119px;
+                }
+            }
+        }
+    }
+
+    &__right {
+        @media #{$small_mobile} {
+            margin-top: 30px;
+        }
+        @media #{$tab_device} {
+            max-width: 60%;
+            margin: 40px auto 0 auto;
+        }
+        img {
+ // @TODO : Need to change image
+            border-radius: 20px;
+            height: 718px;
+            margin-bottom: -65px;
+            object-fit: cover;
+            @media #{$small_mobile} {
+                height: 100%;
+                margin-bottom: -40px;
+            }
+            @media #{$tab_device} {
+                height: 100%;
+                margin-bottom: -120px;
+            }
+        }
+    }
+}

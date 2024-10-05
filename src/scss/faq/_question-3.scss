@@ -1,0 +1,97 @@
+.srex-faq-three {
+	padding-bottom: 220px;
+	background-color: $white-color;
+	@media #{$small_mobile} {
+		padding-bottom: 170px 0;
+		background-size: cover;
+	}
+	@media #{$tab_device} {
+		padding: 80px 0;
+		background-size: cover;
+	}
+	// &__title {
+	// 	width: 700px;
+	// 	margin: 0 auto;
+	// 	text-align: center;
+	// 	h2 {
+	// 		color: $white-color;
+	// 	}
+    //     @media #{$small_mobile} {
+	// 		width: 100%;
+	// 	}
+	// }
+	.row {
+		align-items: flex-end;
+	}
+
+    &__left{
+		border-radius: 249px 20px 20px 20px;
+		background-color: $gray-color;
+		text-align: center;
+		position: relative;
+		margin-right: 40px;
+		&__img img {
+			margin-top: -100px;
+		}
+		&__box {
+            background-color: $white-color;
+            color: $text-primary;
+            position: absolute;
+			right: -20px;
+			bottom: 30px;
+            padding: 25px 40px;
+            border-radius: 20px;
+			box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+            img {
+                height: 75px;
+                width: 52px;
+            }
+            &__text {
+                h2 {
+                    color: $text-primary;
+                }
+				p {
+					text-align: left;
+				}
+            }
+        }
+    }
+    
+
+	.srex-accordion {
+		margin-top: 60px;
+		.accordion-item {
+			background-color: $white-color;
+			color: $text-primary;
+			border-color: $border-gray;
+			border-radius: 10px;
+			.accordion-header__left__badge {
+				color: $primary-color !important;
+				background-color: $gray-color !important;
+			}
+			h3 {
+				color: $text-primary;
+			}
+		}
+		.accordion-button {
+			&:not(.collapsed) {
+				background-color: $white-color;
+				color: $text-primary;
+				.accordion-header__left__badge {
+					background-color: $primary-color !important;
+					color: $white-color !important;
+				}
+			}
+		}
+		.accordion-collapse {
+			&.show {
+				background-color: $white-color;
+				// color: $text-primary;
+				
+			}
+			.accordion-body {
+				padding: 0px 90px 30px 90px;
+			}
+		}
+	}
+}

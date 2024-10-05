@@ -1,0 +1,75 @@
+/*-----------------
+    Main Menu
+-------------------*/
+.ud-main-menu {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        > li {
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            > a {
+                display: block;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 36px;
+                text-transform: capitalize;
+                padding: 20px 15px;
+                text-decoration: none;
+                color: $text-primary;
+                transition: all 0.3s ease-in-out;
+				i {
+					vertical-align: middle;
+                    font-size: 12px;
+                    margin-left: 5px;
+				}
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+            position: relative;
+            &:hover {
+                > ul {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+            }
+            > ul {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+                transform: translateY(50px);
+                width: 250px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				z-index: 9999;
+                li {
+                    display: block;
+                    a {
+                        padding: 15px;
+                        line-height: normal;
+                        &:hover {
+                            background-color: $gray-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.srex-header--home-two {
+    .ud-main-menu__sub-menu {
+        li {
+            a {
+                padding: 15px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.srex-about-us-three {
+
+    &__left {
+        background-color: $border-gray;
+        padding: 40px;
+        border-radius: 20px;
+        max-height: 550px;
+        margin-right: 50px;
+        @media #{$small_mobile} {
+            margin-right: 0px;
+            margin-bottom: 30px;
+            max-height: 100%;
+            padding: 20px;
+        }
+        @media #{$tab_device} {
+            margin-right: 0px;
+            margin-bottom: 30px;
+            max-height: 100%;
+
+        }
+        
+        img {
+            border-radius: 20px;
+            width: 100%;
+            @media #{$small_mobile} {
+                margin-bottom: 40px;
+            }
+            @media #{$tab_device} {
+                margin-bottom: 40px;
+            }
+        }
+        &__img-3-col {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: -44px;
+                width: 100%;
+                bottom: 0;
+                background: url(../images/dots.png) no-repeat;
+            }
+        }
+        &__img-3 {
+            margin-top: -80px;
+            position: relative;
+            z-index: 1;
+            @media #{$small_mobile} {
+                margin-top: 0px;
+            }
+        }
+        &__box {
+            background-color: $primary-color;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 15px;
+            @media #{$small_mobile} {
+                @include flex-center;
+                flex-direction: column;
+                padding: 20px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 15px;
+            }
+            h3 {
+                color: $white-color;
+            }
+        }
+    }
+    .srex-tabs {
+        margin-top: 30px;
+        .tab-content {
+            .srex-section__head__desc {
+                margin-bottom: 40px;
+            }
+            .srex-icon-list {
+                i {
+                    background-color: $secondary-color;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 100%;
+                    @include flex-center;
+                    color: $white-color;
+                    font-size: 12px;
+                }
+                p {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

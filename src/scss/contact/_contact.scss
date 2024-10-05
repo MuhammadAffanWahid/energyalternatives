@@ -1,0 +1,108 @@
+.srex-contact {
+
+	&--three {
+		&__row {
+			background-color: $white-color;
+			box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+			border-radius: 20px;
+			padding: 30px 30px;
+			align-items: center;
+		}
+		.srex-contact__img {
+			position: relative;
+			img {
+				border-radius: 20px;
+				width: 100%;
+				// max-height: 645px;
+				// object-fit: cover;
+			}
+			&__play-btn {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-color: $white-color;
+				height: 90px;
+				width: 90px;
+				border-radius: 50%;
+				@include flex-center;
+				i {
+					color: $primary-color;
+					font-size: 30px;
+				}
+				&:hover {
+					background-color: $primary-color;
+					i {
+						color: $white-color;
+					}
+				}
+			}
+		}
+
+		.srex-section__head__desc {
+			margin-bottom: 60px;
+			color: $text-primary;
+			margin-top: 12px;
+		}
+
+		.srex-contact__left {
+			padding: 0 0 0 50px;
+			background-color: $white-color;
+
+			input, textarea {
+				border: 2px solid $border-gray;
+			}
+			.srex-btn {
+				background-color: $primary-color;
+				&:hover {
+					background-color: $secondary-color;
+				}
+			}
+		}
+	}
+
+	&__left {
+		background: $gray-color;
+		padding: 60px;
+		border-radius: 20px;
+		@media #{$small_mobile} {
+			padding: 30px;
+		}
+		@media #{$tab_device} {
+			padding: 40px;
+		}
+		input {
+			width: 100%;
+			padding: 18px 30px;
+			border: 1px solid $white-color;
+			box-sizing: border-box;
+			border-radius: 999px;
+			margin: 10px 0;
+		}
+		textarea {
+			width: 100%;
+			padding: 18px 30px;
+			border: 1px solid $white-color;
+			box-sizing: border-box;
+			border-radius: 30px;
+			margin: 10px 0;
+		}
+		input, textarea {
+			&:focus {
+				outline: none;
+			}
+		}
+		button {
+			margin-top: 10px;
+			width: 100%;
+			border-radius: 999px;
+			text-transform: uppercase;
+		}
+		
+	}
+	&__right {
+		background: url(../images/home-one/contact-left.png) no-repeat;
+		background-position: bottom right;
+		padding: 20px 0 60px 0;
+	}
+}

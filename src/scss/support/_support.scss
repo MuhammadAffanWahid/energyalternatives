@@ -1,0 +1,23 @@
+.srex-support {
+    padding-top: 100px;
+    @media #{$small_mobile} {
+        padding-top: 70px;
+    }
+    &--three {
+        .srex-support__item {
+            background-color: $gray-color;
+            border: 0px;
+        }
+    }
+    &__item {
+        border: 1px solid $border-gray;
+        border-radius: 20px;
+        padding: 40px 30px;
+        @media #{$small_mobile} {
+            margin-bottom: 15px;
+        }
+        @media #{$tab_device} {
+            margin-bottom: 20px;
+        }
+    }
+}

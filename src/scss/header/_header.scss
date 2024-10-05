@@ -1,0 +1,233 @@
+/*------------------
+	Navbar
+--------------------*/
+@import "navbar";
+
+/*------------------
+	Mobile Menu
+--------------------*/
+@import "mobile-menu";
+
+/*---------------------
+	Header Side Popup
+----------------------*/
+@import "side-popup";
+
+
+/*---------------------
+	Header
+----------------------*/
+.srex-header {
+    padding: 20px 0;
+    background-color: $gray-color;
+    transition: all 0.3s ease-in-out;
+    &.sticky-top {
+        padding: 15px 0;
+        background-color: $white-color;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    &__call {
+        svg {
+            margin-right: 10px;
+            height: 55px;
+            width: 55px;
+            path {
+                stroke: $text-primary;
+            }
+        }
+        span {
+            color: $text-secondary;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        h4 {
+            color: $text-primary;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px;
+            a {
+                color: $text-primary;
+                text-decoration: none;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------
+	Header Home Two
+------------------------------------*/
+.srex-header--home-two {
+    padding: 0;
+    @media #{$small_mobile} {
+        padding: 15px;
+    }
+    @media #{$tab_device} {
+        padding: 20px;
+    }
+    &.sticky-top {
+        padding: 0;
+        @media #{$small_mobile} {
+            padding: 15px;
+        }
+    }
+
+    .container-fluid {
+        @media #{$small_mobile} {
+            // padding: 0;
+            width: 100%;
+        }
+        @media #{$tab_device} {
+            // padding: 0;
+            width: 100%;
+        }
+    }
+    .ud-main-menu ul > li > a {
+        padding: 25px 15px;
+    }
+
+    &__call-two {
+        background: #FF7029;
+        padding: 15px 30px;
+        span{
+            color: $white-color;
+        }
+        h4 {
+            a{
+                color: $white-color;
+                &:hover {
+                    color: $text-primary;
+                }
+            }
+        }
+    }
+}
+
+/*---------------------
+    Header Home Three
+----------------------*/
+.srex-header--home-three {
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    z-index: 999;
+    nav {
+        background-color: $white-color;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+        padding: 0 30px;
+    }
+    @media #{$small_mobile} {
+        padding: 0;
+    }
+    @media #{$tab_device} {
+        padding: 20px;
+    }
+    &.sticky-top {
+        padding: 0;
+        @media #{$small_mobile} {
+            padding: 15px;
+        }
+    }
+
+    nav {
+        @media #{$small_mobile} {
+            padding: 20px 15px;
+        }
+        @media #{$tab_device} {
+            padding: 20px 30px;
+        }
+    }
+
+    .container-fluid {
+        @media #{$small_mobile} {
+            // padding: 0;
+            width: 100%;
+        }
+        @media #{$tab_device} {
+            // padding: 0;
+            width: 100%;
+        }
+    }
+    .ud-main-menu ul > li > a {
+        padding: 25px 15px;
+    }
+
+    &__call-three {
+        background: #FF7029;
+        padding: 15px 30px;
+        span{
+            color: $white-color;
+        }
+        h4 {
+            a{
+                color: $white-color;
+                &:hover {
+                    color: $text-primary;
+                }
+            }
+        }
+    }
+}
+
+/*---------------------
+    Header Hamburger Menu
+----------------------*/
+.ud-hamburger-menu {
+    display: inline-flex;
+    
+    .ud-hamburger-menu__btn {
+        &--active {
+            span {
+                transform: rotate(45deg);
+                &::before {
+                    top: 0;
+                    transform: rotate(0);
+                }
+                &::after {
+                    top: 0;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        width: 26px;
+        height: 26px;
+        position: relative;
+        cursor: pointer;
+        span {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: $primary-color;
+            transition: all 0.3s ease-in-out;
+            &::before, &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: $primary-color;
+                transition: all 0.3s ease-in-out;
+            }
+            &::before {
+                top: -8px;
+            }
+            &::after {
+                top: 8px;
+            }
+        }
+
+    }
+}

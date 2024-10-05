@@ -1,0 +1,183 @@
+.srex-about-us-one {
+	&__container {
+        @extend .container;
+        margin: 0 auto;
+        padding: 0 .75rem;
+    }
+	&__left {
+        padding-top: 60px;
+        padding-left: 33%;
+        // padding-bottom: 100px;
+        // padding-left: 9%;
+        @media #{$lg_device} {
+            padding-left: 7%;
+        }
+		@media #{$small_mobile} {
+			padding-left: 0;
+            margin-bottom: 40px;
+            text-align: center;
+		}
+        @media #{$tab_device} {
+			padding-left: 0;
+            margin-bottom: 40px;
+            text-align: center;
+		}
+        // @media #{$big_screen} {
+        //     padding-left: 49%;
+        // }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .srex-section__head__desc {
+            @media #{$tab_device} {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+        }
+        .srex-icon-list {
+            margin-top: 35px;
+            margin-bottom: 45px;
+            @media #{$small_mobile} {
+                margin: 35px auto 45px auto;
+                display: table;
+            }
+            @media #{$tab_device} {
+                margin: 35px auto 45px auto;
+                display: table;
+            }
+        }
+    }
+    &__right {
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        // bottom: 0;
+        &__img {
+            // margin-right: -50px;
+            height: 780px;
+            object-fit: cover;
+            width: 100%;
+            @media #{$small_mobile} {
+                height: 400px;
+                margin-right: 0;
+            }
+            @media #{$tab_device} {
+                height: 600px;
+                margin-right: 0;
+            }
+        }
+        &__box {
+            background-color: $primary-color;
+            color: $white-color;
+            position: absolute;
+            top: 100%;
+            padding: 25px 40px;
+            border-radius: 20px;
+            margin-top: -280px;
+            margin-left: 50px;
+            @media #{$small_mobile} {
+                margin-left: 0;
+                right: 30px;
+                margin-top: -165px;
+                padding: 20px;
+            }
+            @media #{$tab_device} {
+                margin-left: 0;
+                right: 60px;
+                margin-top: -230px;
+                padding: 30px;
+            }
+            @media #{$lg_device} {
+                margin-left: 0;
+                right: 80px;
+            }
+            img {
+                height: 75px;
+                width: 52px;
+            }
+            &__text {
+                h2, p {
+                    color: $white-color;
+                }
+            }
+        }
+	}
+}
+
+
+.srex-section-bottom {
+	margin-top: 50px;
+	@media #{$small_mobile} {
+		margin-top: 80px
+	}
+    @media #{$tab_device} {
+        .row {
+            flex-direction: column-reverse;
+            gap: 50px;
+        }
+    }
+	&__left {
+		position: relative;
+		margin-top: 80px;
+        
+        @media #{$tab_device} {
+            text-align: center;
+        }
+		&__img {
+			position: absolute;
+			left: 65px;
+			bottom: 0;
+			@media #{$small_mobile} {
+                left: 50px;
+                height: 400px;
+			}
+            @media #{$tab_device} {
+                left: 170px;
+                height: 500px;
+            }
+		}
+        
+	}
+	&__right {
+        @media #{$small_mobile} {
+            text-align: center;
+            margin: 50px 0;
+        }
+        @media #{$tab_device} {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .srex-section-bottom__right__desc {
+            @media #{$small_mobile} {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+            @media #{$tab_device} {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        
+        }
+		&__title {
+			color: #24231d;
+			font-family: Exo;
+			font-size: 38px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 47.6px; /* 125.263% */
+			text-transform: capitalize;
+			margin-bottom: 20px;
+		}
+
+        .srex-icon-list {
+            @media #{$small_mobile} {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+            @media #{$tab_device} {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+	}
+}

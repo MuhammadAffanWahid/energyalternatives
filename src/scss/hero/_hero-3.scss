@@ -1,0 +1,38 @@
+/*------------------------------------
+	Hero Three
+------------------------------------*/
+.srex-hero-three {
+    background-image: url(../images/home-three/hero-bg.png);
+    background-position: bottom;
+    background-color: $gray-color;
+    height: 815px;
+    margin-top: -85px;
+    &__left {
+        max-width: 500px;
+        padding: 200px 0;
+        &__title {
+            font-size: 68px;
+            line-height: 78px;
+            font-weight: 700;
+            color: $text-primary;
+            text-transform: capitalize;
+            span {
+                color: $secondary-color;
+            } 
+        }
+        &__desc {
+            color: $text-secondary;
+            margin-top: 30px;
+        }
+        .srex-btn {
+            margin-top: 32px;
+        }
+    }
+
+    &__right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,47 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-column {
+    @include flex-center;
+    flex-direction: column;
+}
+
+@mixin flex-center-vert {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center-horiz {
+    display: flex;
+    justify-content: center;
+}
+
+
+@mixin box($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin cover-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// @mixin hex-to-rgba( $hex, $opacity) {
+
+// }
