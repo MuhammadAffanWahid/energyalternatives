@@ -2929,10 +2929,10 @@ input:focus {
 }
 
 .ceo-image {
-  width: 95%;
+  width: 90%;
   max-width: 800px;
   border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  /* box-shadow: 0 5px 15px rgba(217, 217, 217, 0.8); */
 }
 
 .ceo-text-container {
@@ -2942,7 +2942,7 @@ input:focus {
 
 .ceo-text-container h2 {
   font-size: 36px;
-  color: #F9A91C;
+  color: #2D65A7;
   margin-bottom: 20px;
   font-weight: 700;
 }
