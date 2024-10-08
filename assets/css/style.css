@@ -4699,9 +4699,9 @@ input:focus {
 }
 @media (max-width: 767px) {
   .srex-testimonial-two {
-    padding-top: 70px;
+    padding-top: 70px; 
     padding-bottom: 200px;
-  }
+  } 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .srex-testimonial-two {
