@@ -2824,7 +2824,7 @@ input:focus {
 }
 
 .hero-features i{
-  color:#FAAA1B;
+  color:#4CAF50;
 }
 
 .hero-feature-item {
@@ -2917,6 +2917,7 @@ input:focus {
 }
 
 .ceo-message-container {
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -3081,6 +3082,109 @@ input:focus {
     padding:20px;
   }
 }
+/* CEO Section is */
+
+
+/* Support Sevices Section */
+.support-services-section {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  max-width: 1400px;
+  margin: 40px auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.support-services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.support-services-item {
+  flex: 1 1 calc(25% - 20px);
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.support-services-item h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.7rem;
+}
+
+.support-services-item h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.support-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.support-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.support-list li i {
+  color: #4CAF50;
+  margin-right: 8px;
+}
+.support-list li i:hover{
+  cursor: pointer;
+  color: #faaa1b;
+}
+
+.support-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; Allow text to wrap */
+  text-align: left; /* Adjust text alignment if needed */
+}
+
+/* Responsive font size for smaller screens */
+@media (max-width: 768px) {
+  .support-list li {
+    font-size: 14px; /* Adjust font size for readability */
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .support-services-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .support-services-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .support-services-container {
+    flex-direction: column;
+  }
+
+  .support-services-item {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+
 /*------------------------------------
 	11/ Features
 ------------------------------------*/
@@ -4583,6 +4687,7 @@ input:focus {
 }
 
 .srex-testimonial-two {
+  margin-top: -200px;
   background-color: #F8F7F0;
   background-image: url(../images/home-two/testimonial-bg.png);
   background-repeat: no-repeat;
