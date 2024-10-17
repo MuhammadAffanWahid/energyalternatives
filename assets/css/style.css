@@ -717,6 +717,8 @@ input:focus {
 
 /* Floating Social Media Icons */
 /* Floating Social Media Icons */
+
+
 .social-icons {
   position: fixed;
   top: 50%;
@@ -736,8 +738,8 @@ input:focus {
   line-height: 40px;
   border-radius: 30%;
   transition: background-color 0.3s;
-  animation: pulse-spread 2.5s infinite;
-  box-shadow: 0 0 0 0 rgba(250, 170, 27, 0.7); /* Initial shadow */
+  animation: pulse-spread 2s infinite;
+  box-shadow: 0 0 0 0 rgba(209, 209, 209, 0.4);
 }
 
 .social-icon i {
@@ -745,15 +747,15 @@ input:focus {
 }
 
 .social-icon:hover {
-  color: #FAAA1B;
-  background-color: #555;
+  color: #ffffff;
+  background-color: #FAAA1B;
 }
 
 /* Keyframes for pulse spread animation */
 @keyframes pulse-spread {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(250, 170, 27, 0.7);
+    /* box-shadow: 0 0 0 0 rgba(250, 170, 27, 0.7); */
   }
   70% {
     transform: scale(.9); /* Expand size */
@@ -780,7 +782,7 @@ input:focus {
   @keyframes pulse-spread {
     0% {
       transform: scale(1);
-      box-shadow: 0 0 0 0 rgba(250, 170, 27, 0.7);
+      /* box-shadow: 0 0 0 0 rgba(250, 170, 27, 0.7); */
     }
     70% {
       transform: scale(1.1);
@@ -807,7 +809,7 @@ input:focus {
   @keyframes pulse-spread {
     0% {
       transform: scale(1);
-      box-shadow: 0 0 0 0 rgba(250, 170, 27, 0.7);
+      /* box-shadow: 0 0 0 0 rgba(250, 170, 27, 0.7); */
     }
     70% {
       transform: scale(1.05);
@@ -1920,6 +1922,7 @@ input:focus {
 /*------------------------------------
 	Hero Two
 ------------------------------------*/
+/* Base styles */
 .green-color{
   color:#e5a928 !important;
 }
@@ -2062,6 +2065,7 @@ input:focus {
   color: #fff;
 }
 
+
 /*------------------------------------
 	Hero Three
 ------------------------------------*/
@@ -2106,6 +2110,7 @@ input:focus {
 	09/ Services
 ------------------------------------*/
 .srex-service {
+  margin-top: 110px;
   background: #fff;
   padding-top: 30px;
 }
@@ -2346,11 +2351,37 @@ input:focus {
 .srex-about-us-one__container {
   margin: 0 auto;
   padding: 0 0.75rem;
+
 }
 .srex-about-us-one__left {
   padding-top: 60px;
   padding-left: 33%;
 }
+
+.scrolling-gallery {
+  width: 100%; /* Full width of container */
+  overflow: hidden; /* Hide overflow to enable scroll effect */
+  position: relative; /* To position items properly */
+}
+
+.gallery-track {
+  display: flex; /* Flex to align items horizontally */
+  transition: transform 0.5s ease-in-out; /* Smooth scrolling */
+}
+
+.gallery-item {
+  min-width: 100%; /* Each image takes full width of container */
+  box-sizing: border-box;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image fits well */
+}
+
+
+
 @media only screen and (min-width: 992px) and (max-width: 1280px) {
   .srex-about-us-one__left {
     padding-left: 7%;
@@ -2541,7 +2572,7 @@ input:focus {
 }
 
 .srex-about-us-two {
-  margin-top:100px;
+  margin-top:-150px;
 }
 
 @media (max-width: 767px) {
@@ -2907,7 +2938,7 @@ input:focus {
   padding: 50px 40px;
   background-color: #ffffff;
   border-radius: 15px;
-  max-width: 1400px;
+  max-width: 1480px;
   margin: 40px auto;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -2915,6 +2946,28 @@ input:focus {
   align-items: center;
   justify-content: center;
 }
+
+
+.ceo-message-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ceo-text-container {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.ceo-image-container {
+  flex: 0 0 300px; /* Set the width of the image container */
+}
+
+.ceo-image {
+  width: 100%;
+  height: auto;
+}
+          
 
 .ceo-message-container {
   margin-top: 100px;
@@ -2966,7 +3019,10 @@ input:focus {
 @media screen and (max-width: 768px) {
   .ceo-message-section {
       padding: 30px 15px;
+      
   }
+
+  
 
   .ceo-message-container {
       flex-direction: column;
@@ -3090,7 +3146,7 @@ input:focus {
   padding: 40px;
   background-color: #ffffff;
   border-radius: 15px;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 40px auto;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
@@ -4687,7 +4743,7 @@ input:focus {
 }
 
 .srex-testimonial-two {
-  margin-top: -200px;
+  margin-top: 10px;
   background-color: #F8F7F0;
   background-image: url(../images/home-two/testimonial-bg.png);
   background-repeat: no-repeat;
@@ -5175,7 +5231,7 @@ input:focus {
   bottom: -10px;
   width: 0;
   height: 100%;
-  background-color: rgba(29, 143, 44, 0.39);
+  /* background-color: rgba(29, 143, 44, 0.39); */
   transition: all 0.4s ease-in-out;
   border-radius: 10px;
 }
@@ -5240,9 +5296,9 @@ input:focus {
 .srex-blog-two__post:hover h3 a, .srex-blog-two__post:hover .srex-accordion .accordion-header__left__badge a, .srex-accordion .srex-blog-two__post:hover .accordion-header__left__badge a {
   color: #FAAA1B;
 }
-.srex-blog-two__post .srex-blog-one__post__img::after {
+/* .srex-blog-two__post .srex-blog-one__post__img::after {
   background: rgba(255, 112, 41, 0.39);
-}
+} */
 .srex-blog-two__post__badge {
   position: absolute;
   top: 45%;
