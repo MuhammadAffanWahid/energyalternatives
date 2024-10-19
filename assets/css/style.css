@@ -557,9 +557,7 @@ input:focus {
   width: 30px;
   height: 30px;
 }
-/*------------------------------------
-	Container
-------------------------------------*/
+
 @media (max-width: 767px) {
   .container, .srex-about-us-one__container {
     width: 95%;
