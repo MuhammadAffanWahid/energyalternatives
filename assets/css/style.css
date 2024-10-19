@@ -722,7 +722,7 @@ input:focus {
 .social-icons {
   position: fixed;
   top: 50%;
-  left: 95%;
+  left: 94%;
   transform: translateY(-50%);
   z-index: 1000;
 }
@@ -733,9 +733,9 @@ input:focus {
   text-align: center;
   background-color: #333;
   color: #FAAA1B;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   border-radius: 30%;
   transition: background-color 0.3s;
   animation: pulse-spread 2s infinite;
@@ -767,13 +767,12 @@ input:focus {
   }
 }
 
-/* Responsive CSS for smaller devices */
-@media only screen and (max-width: 768px) {
-  .social-icon {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+
+
+  .social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
   }
+
 
   .social-icon i {
     font-size: 18px;
@@ -3335,7 +3334,7 @@ input:focus {
   opacity: 0; /* Initially hidden */
 }
 .srex-video__play__btn {
-  background: #2D65A7;
+  background: #FAAA1B;
   border-radius: 50%;
   color: #fff;
   display: flex;
