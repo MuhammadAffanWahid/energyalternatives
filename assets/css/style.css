@@ -58,10 +58,12 @@ Colors
 /*------------------------------------
 	03/ Animation
 ------------------------------------*/
+
+
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap");
 .ud-animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
+animation-duration: 1s;
+animation-fill-mode: both;
 }
 
 /**
