@@ -20,6 +20,9 @@
       rel="stylesheet"
       href="./assets/vendors/font-awesome/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMh0KLe3Z6xGv3jc7EVB8XJK5ghDJNYiYwU0Zh" crossorigin="anonymous">
+
+
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="./assets/vendors/slick-slider/slick.css" />
     <!-- Slick Slider Theme -->
@@ -139,7 +142,34 @@
       </div>
     
       <!-- Floating Social Media Icons -->
-      <div class="social-icons">
+    <script src="https://kit.fontawesome.com/12642bc27d.js" crossorigin="anonymous"></script>
+ 
+<div class="navigation">
+  <div class="menuToggle">
+    <i class="fa-solid fa-share" style="color: #6d4d9c; font-size: 2em;"></i>
+</div>
+
+
+        <div class="menu">
+            <ul>
+                <li style="--i:0.1s"><a href="https://www.facebook.com/energyalternatives.pk" target="_blank">
+                        <i title="Github" class="fa-brands fa-facebook" style="color: #6d4d9c;"></i>
+                    </a></li>
+                <li style="--i:0.2s"><a href="https://pk.linkedin.com/company/ealternativespk" target="_blank">
+                    <i title="LinkedIn" class="fa-brands fa-linkedin" style="color: #0072b1"></i>
+                    </a></li>
+                <li style="--i:0.3s"><a href="https://x.com/enrgy_altrntiv_" target="_blank">
+                    <i title="CodePen" class="fa-brands fa-x" style="color: black;"></i>
+                    </a></li>
+                <li style="--i:0.4s"><a href="https://www.instagram.com/energy_alternatives_/" target="_blank">
+                    <i title="Instagram" class="fa-brands fa-instagram" style="color:purple"></i>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+
+      <!-- <div class="social-icons">
   
         <a href="https://www.facebook.com/energyalternatives.pk" target="_blank" class="social-icon"
           ><i class="fab fa-facebook-f"></i
@@ -159,7 +189,7 @@
           <a href="https://www.youtube.com/@energyalternatives-pakistan" target="_blank" class="social-icon"
           ><i class="fa-brands fa-youtube"></i
             ></a>
-      </div>
+      </div> -->
     </header>
     
 
@@ -2058,9 +2088,30 @@ function scrollGallery() {
 
 // Scroll images every 3 seconds
 setInterval(scrollGallery, 3000);
-
-
 </script>
-    
+   
+
+
+<script>
+  // Get the menu toggle element
+  let menuToggle = document.querySelector('.menuToggle');
+  
+  // Toggle the menu on click
+  menuToggle.onclick = function () {
+      menuToggle.classList.toggle('active');
+  };
+
+  // Auto-open the menu when the page loads
+  window.onload = function() {
+      // Open the menu on page load
+      menuToggle.classList.add('active');
+
+      // Close the menu after 5 seconds
+      setTimeout(function() {
+          menuToggle.classList.remove('active');
+      }, 3000); // Adjust the time as needed
+  };
+</script>
+
   </body>
 </html>
