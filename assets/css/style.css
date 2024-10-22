@@ -733,7 +733,7 @@ input:focus {
 } */
 .navigation {
   position: fixed;  /* Ensure it's fixed on the page */
-  top: 50%;         /* Adjust vertical position */
+  top: 70%;         /* Adjust vertical position */
   left: 90%;        /* Adjust horizontal position */
   display: flex;
   flex-direction: column;
@@ -741,7 +741,6 @@ input:focus {
   align-items: center;
   z-index: 999;     /* Ensure the icons are above other content */
 }
-
 
 .menuToggle {
   position: relative;
@@ -755,6 +754,19 @@ input:focus {
   align-items: center;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
+
+/* Main menu container */
+.navigation .menu {
+  display: none; /* Hide by default */
+  position: absolute;
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+/* Show menu when active */
+.navigation .menu.active {
+  display: block; /* Show menu when active */
+}
+
 
 .menuToggle i {
   font-size: 2em; /* Adjust the size of the icon as needed */
@@ -772,21 +784,23 @@ input:focus {
 
 .menu {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 70px; /* Adjust width */
+    height: 270px; /* Adjust height for vertical layout */
     background: #fff;
-    border-radius: 70px;
+    border-radius: 35px; /* Adjust for rounder edges */
     z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Evenly distribute space between icons */
+    align-items: center;
     transition: transform 0.5s, width 0.5s, height 0.5s;
     transition-delay: 1s, 0.5s, 0.5s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .menuToggle.active~.menu {
-    width: 270px;
-    height: 70px;
     z-index: 1;
-    transform: translateY(-80px);
+    transform: translateY(-140px); /* Move vertically */
     transition-delay: 0s, 0.5s, 0.5s;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
@@ -812,10 +826,12 @@ input:focus {
 .menu ul {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    gap: 30px;
+    flex-direction: column; /* Vertical layout */
+    justify-content: space-evenly; /* Center items evenly */
+    align-items: center; /* Center horizontally */
+    height: 100%; /* Full height for vertical centering */
+    padding: 0;
+    margin: 0;
 }
 
 .menu ul li {

@@ -618,9 +618,7 @@
                 <div class="gallery-item">
                   <img src="assets/images/gallery (1)/20.jpg" alt="About_Us_Right_3" />
                 </div>
-                <div class="gallery-item">
-                  <img src="assets/images/gallery (1)/21" alt="About_Us_Right_3" />
-                </div>
+          
                 <div class="gallery-item">
                   <img src="assets/images/gallery (1)/22.jpg" alt="About_Us_Right_3" />
                 </div>
@@ -2092,26 +2090,28 @@ setInterval(scrollGallery, 3000);
    
 
 
-<script>
-  // Get the menu toggle element
+<script>// Get the menu toggle element
   let menuToggle = document.querySelector('.menuToggle');
+  let menu = document.querySelector('.menu'); // Get the menu element
   
   // Toggle the menu on click
   menuToggle.onclick = function () {
       menuToggle.classList.toggle('active');
+      menu.classList.toggle('active'); // Toggle the menu visibility
   };
-
+  
   // Auto-open the menu when the page loads
   window.onload = function() {
       // Open the menu on page load
       menuToggle.classList.add('active');
-
+      menu.classList.add('active'); // Ensure menu is also active
+  
       // Close the menu after 5 seconds
       setTimeout(function() {
           menuToggle.classList.remove('active');
+          menu.classList.remove('active'); // Hide the menu when closing
       }, 3000); // Adjust the time as needed
   };
-</script>
-
+  </script>
   </body>
 </html>
