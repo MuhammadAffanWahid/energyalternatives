@@ -735,7 +735,7 @@ input:focus {
   position: fixed;  /* Ensure it's fixed on the page */
   top: 70%;         /* Adjust vertical position */
   left: 90%;        /* Adjust horizontal position */
-  display: flex;
+  display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
